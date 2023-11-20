@@ -37,11 +37,14 @@
         .first-half h1 {
             font-size: 48px;
             color: #1877f2;
+            padding:20px;
+
 
         }
 
         .first-half p {
             font-size: 20px;
+            padding:20px;
         }
     </style>
     <section class="first-half">
@@ -70,7 +73,7 @@
                 
             
 
-            form > * {
+            form > *:not(hr){
                 min-height: 40px;
                 min-width: 350px;
                 text-align: center;
@@ -84,11 +87,15 @@
             button {
                 background-color: #1877f2;
                 border: none;
+                border-radius: 5px;
             }
             .green-button {
                 background-color: #42b72a;
                 min-height: 40px;
                 padding: 0 20px;
+            }
+            hr {
+                width:100%;
             }
         </style>
         <form>
@@ -96,6 +103,7 @@
             <input type="password" placeholder="password" id="">
             <button>log In</button>
             <a href="">Forgotten password</a>
+            <hr>
             <div>
                 <button class="green-button">
                     Create new account
